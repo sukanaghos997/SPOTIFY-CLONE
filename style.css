@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Varela+Round&display=swap');
+
+
+body {
+    background-color: rgb(245, 222, 222);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 55px;
+    background-color: rgb(205 79 38);
+    color: white;
+}
+
+.brand img {
+    width: 55px;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    /* body structor*/
+    min-height: 70vh;
+    /**75% of height of the range bar*/
+    background-color: rgb(245, 238, 236);
+    color: rgb(253, 253, 252);
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 10px auto;
+    width: 95%;
+    border-radius: 5px;
+    padding: 20px;
+    background-image: url("spotify_sketch_4-11.png");
+}
+
+.bottom {
+    position: sticky;
+    height: 80px;
+    background-color: rgb(205 79 38);
+    color: white;
+    bottom: 0;
+    display: flex;
+    /**to bring range bar middle*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /**breaking the line and putting the playbutton under the rangebar*/
+}
+
+.playicons {
+    margin-top: 20px;
+}
+
+.playicons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    /**text center will not work*/
+    width: 80vw;
+    /**80% of width of he range bar*/
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 30px;
+}
+
+.songItem {
+    height: 40px;
+    display: flex;
+    background-color: rgb(205 79 38);
+    /* width: 80%; */
+    color: rgb(246, 241, 241);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 39px;
+}
+
+.songItem img {
+    width: 34px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i{
+   cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(255, 253, 253);
+    }
+  }
