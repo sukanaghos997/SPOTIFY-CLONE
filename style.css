@@ -69,11 +69,11 @@ nav ul li {
     /**breaking the line and putting the playbutton under the rangebar*/
 }
 
-.playicons {
+.icons {
     margin-top: 20px;
 }
 
-.playicons i {
+.icons i {
     cursor: pointer;
 }
 
